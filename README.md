@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@esm/index.mjs';
+import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@v0.0.1-esm/index.mjs';
 ```
 
 #### filled5d( value, shape )
@@ -90,7 +90,7 @@ var out = filled5d( 0.0, [ 1, 1, 1, 2, 3 ] );
 <body>
 <script type="module">
 
-import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@esm/index.mjs';
+import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@v0.0.1-esm/index.mjs';
 
 var out = filled5d( 0.0, [ 1, 1, 1, 1, 3 ] );
 // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
