@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@deno/mod.js';
+import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@v0.1.0-deno/mod.js';
 ```
 
 #### filled5d( value, shape )
@@ -85,7 +85,7 @@ var out = filled5d( 0.0, [ 1, 1, 1, 2, 3 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@deno/mod.js';
+import filled5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d@v0.1.0-deno/mod.js';
 
 var out = filled5d( 0.0, [ 1, 1, 1, 1, 3 ] );
 // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
