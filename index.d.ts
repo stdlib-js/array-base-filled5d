@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,31 +16,36 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/array';
+import { Shape5D } from '@stdlib/types/ndarray';
 
 /**
-* Create a filled five-dimensional nested array.
+* Five-dimensional nested array.
+*/
+type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
+
+/**
+* Returns a filled five-dimensional nested array.
 *
-* @module @stdlib/array-base-filled5d
+* @param value - fill value
+* @param shape - array shape
+* @returns output array
 *
 * @example
-* var filled5d = require( '@stdlib/array-base-filled5d' );
-*
 * var out = filled5d( 0.0, [ 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
 *
 * @example
-* var filled5d = require( '@stdlib/array-base-filled5d' );
-*
-* var out = filled5d( 'beep', [ 1, 1, 1, 3, 1 ] );
-* // returns [ [ [ [ [ 'beep' ], [ 'beep' ], [ 'beep' ] ] ] ] ]
+* var out = filled5d( 'beep', [ 1, 1, 1, 1, 3 ] );
+* // returns [ [ [ [ [ 'beep', 'beep', 'beep' ] ] ] ] ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function filled5d<T = unknown>( value: T, shape: Shape5D ): Array5D<T>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = filled5d;
